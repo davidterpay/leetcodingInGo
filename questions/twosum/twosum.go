@@ -8,7 +8,6 @@ package twosum
 // 1. If the array is sorted, we can do a traversal of the array by keeping a pointer on each side of the array.
 // if the number is greater than the target, we move the right index one to the left. If the number is less than the
 // target, we move the left index one to the right. The algorithm terminates when the indices are equal to one another.
-
 // 2. If we do not have a sorted array, we can hash the complement of each value as we are iterating through the array.
 // if we encounter the same hashed complement later, we know we can hit the target.
 func Algo(numbers []int, target int) []int {
